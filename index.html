@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Galka grade calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<h1>Grade Calculator by Humble</h1>
+<table id="gradeTable" style="width:50%" align="center" border=”1” cellspacing=”2” cellpadding=”5”>
+    <tr id="titles">
+        <td>Category</td>
+        <td>Grades</td>
+        <td>Weight(%)</td>
+    </tr>
+    <tr id="1">
+        <td>HOMEWORK</td>
+        <td><input id="hwScores" placeholder="Enter Scores" value="80,90,100"></td>
+        <td><input id="hwWeight" placeholder="Enter Weight" value="10"></td>
+    </tr>
+    <tr id="2">
+        <td>CLASSWORK</td>
+        <td><input id="cwScores" placeholder="Enter Scores" value="60,90,90"></td>
+        <td><input id="cwWeight" placeholder="Enter Weight" value="15"></td>
+    </tr>
+    <tr id="3">
+        <td>TESTS</td>
+        <td><input id="testScores" placeholder="Enter Scores" value="60,40,70"></td>
+        <td><input id="testWeight" placeholder="Enter Weight" value="20"></td>
+    </tr>
+    <tr id="4">
+        <td>PARTICIPATION</td>
+        <td><input id="partScores" placeholder="Enter Scores" value="95,100,110"></td>
+        <td><input id="partWeight" placeholder="Enter Weight" value="15"></td>
+    </tr>
+    <tr id="5">
+        <td>PROJECTS</td>
+        <td><input id="proScores" placeholder="Enter Scores" value="50,81,65"></td>
+        <td><input id="proWeight" placeholder="Enter Weight" value="15"></td>
+    </tr>
+</table>
+<table id="finalTable" style="width:50%" align="center" border="3" cellspacing="4" cellpadding="10">
+    <tr id="titles2">
+        <td>Wanted grade in class</td>
+        <td>Weight(%)</td>
+    </tr>
+    <tr id="finals">
+        <td><input id="gradeWanted" placeholder="Enter Grade" value="80"></td>
+        <td><input id="finalWeight" placeholder="Enter Weight" value="25"></td>
+    </tr>
+</table>
+<button onclick="onSubmit()">Get current grade in class</button>
+<div id="grade"></div>
+<button onclick="onClick()">Get needed grade for final</button>
+<div id="finalGrade"></div>
+<button onclick="reset()">Reset</button>
+</body>
+</html>
